@@ -1,4 +1,4 @@
-package AreaAndVolumeOfASphere;
+package areaandvolumeofasphere;
 
 import java.util.Scanner;
 
