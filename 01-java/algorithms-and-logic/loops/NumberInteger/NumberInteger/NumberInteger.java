@@ -1,4 +1,4 @@
-package NumberInteger;
+package numberinteger;
 
 import java.util.Scanner;
 
