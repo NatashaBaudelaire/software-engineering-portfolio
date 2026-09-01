@@ -1,4 +1,4 @@
-package BillAmount;
+package billamount;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class BillAmount {
         Scanner input = new Scanner(System.in);
 
         System.out.print("What is the bill amount? $");
-        double BillAmount = input.nextDouble();
+        double billAmount = input.nextDouble();
 
         System.out.print("How many adult men? ");
         int numAdultMen = input.nextInt();
@@ -26,7 +26,7 @@ public class BillAmount {
                         + (numAdultWomen * weightAdultWoman)
                         + (numChildren * weightChild);
 
-        double costPerWeight = billamount / totalWeight;
+        double costPerWeight = billAmount / totalWeight;
 
         double totalAdultMen = costPerWeight * numAdultMen * weightAdultMan;
         double totalAdultWomen = costPerWeight * numAdultWomen * weightAdultWoman;
@@ -34,7 +34,7 @@ public class BillAmount {
 
         double subtotal = totalAdultMen + totalAdultWomen + totalChildren;
 
-        System.out.printf("Total Bill Amount: $%.2f%n", billamount);
+        System.out.printf("Total Bill Amount: $%.2f%n", billAmount);
         System.out.printf("Subtotal for Adult Men: $%.2f%n", totalAdultMen);
         System.out.printf("Subtotal for Adult Women: $%.2f%n", totalAdultWomen);
         System.out.printf("Subtotal for Children: $%.2f%n", totalChildren);
