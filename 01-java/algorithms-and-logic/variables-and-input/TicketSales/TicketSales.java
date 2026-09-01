@@ -1,4 +1,4 @@
-package TicketSales;
+package ticketsales;
 import java.util.Scanner;
 
 public class TicketSales {
