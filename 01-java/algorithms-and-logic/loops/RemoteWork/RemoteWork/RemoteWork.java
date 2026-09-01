@@ -1,4 +1,4 @@
-package RemoteWork;
+package remotework;
 
 import java.util.Scanner;
 
