@@ -1,4 +1,4 @@
-package AreaCalculation;
+package areacalculation;
 
 import java.util.Scanner;
 
