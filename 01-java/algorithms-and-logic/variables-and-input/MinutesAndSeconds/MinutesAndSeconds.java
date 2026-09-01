@@ -1,4 +1,4 @@
-package MinutesAndSeconds;
+package minutesandseconds;
 
 import java.util.Scanner;
 
