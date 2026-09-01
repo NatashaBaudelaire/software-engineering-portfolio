@@ -1,4 +1,4 @@
-package RetirementTime;
+package retirementtime;
 
 import java.util.Scanner;
 import java.time.LocalDate;
