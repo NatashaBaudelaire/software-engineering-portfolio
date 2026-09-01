@@ -1,4 +1,4 @@
-package Odometer;
+package odometer;
 
 import java.util.Scanner;
 
