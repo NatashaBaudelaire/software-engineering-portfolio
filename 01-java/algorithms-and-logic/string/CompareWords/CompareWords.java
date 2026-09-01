@@ -1,4 +1,4 @@
-package CompareWords;
+package comparewords;
 
 import java.util.Scanner;
 
