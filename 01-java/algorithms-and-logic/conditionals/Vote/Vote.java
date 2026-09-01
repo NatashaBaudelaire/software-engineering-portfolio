@@ -1,4 +1,4 @@
-package Vote;
+package vote;
 
 import java.time.Year;
 import java.util.Scanner;
