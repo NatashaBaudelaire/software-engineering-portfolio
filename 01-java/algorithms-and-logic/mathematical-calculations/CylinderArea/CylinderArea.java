@@ -1,4 +1,4 @@
-package CylinderArea;
+package cylinderarea;
 
 import java.util.Scanner;
 
