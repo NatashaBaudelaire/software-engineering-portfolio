@@ -1,4 +1,4 @@
-package EmployeeFixed;
+package employeefixed;
 
 import java.util.Scanner;
 
