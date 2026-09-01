@@ -1,4 +1,4 @@
-package BmiBodyMassIndex;
+package bmibodymassindex;
 
 import java.util.Scanner;
 
