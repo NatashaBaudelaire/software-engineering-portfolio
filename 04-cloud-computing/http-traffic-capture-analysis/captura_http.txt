@@ -1,0 +1,85 @@
+tcpdump: data link type LINUX_SLL2
+tcpdump: listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+23:53:50.201056 lo    In  IP (tos 0x0, ttl 64, id 30932, offset 0, flags [DF], proto TCP (6), length 60)
+    127.0.0.1.38418 > 127.0.0.1.8080: Flags [S], cksum 0xfe30 (incorrect -> 0x4d85), seq 204231187, win 65495, options [mss 65495,sackOK,TS val 2574865697 ecr 0,nop,wscale 7], length 0
+E..<x.@.@................,R..........0.........
+.yU!........
+23:53:50.201078 lo    In  IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    127.0.0.1.8080 > 127.0.0.1.38418: Flags [S.], cksum 0xfe30 (incorrect -> 0x4e97), seq 976999954, ack 204231188, win 65483, options [mss 65495,sackOK,TS val 2574865697 ecr 2574865697,nop,wscale 7], length 0
+E..<..@.@.<.............:;...,R......0.........
+.yU!.yU!....
+23:53:50.201095 lo    In  IP (tos 0x0, ttl 64, id 30933, offset 0, flags [DF], proto TCP (6), length 52)
+    127.0.0.1.38418 > 127.0.0.1.8080: Flags [.], cksum 0xfe28 (incorrect -> 0x7553), seq 1, ack 1, win 512, options [nop,nop,TS val 2574865697 ecr 2574865697], length 0
+E..4x.@.@................,R.:;.......(.....
+.yU!.yU!
+23:53:50.201200 lo    In  IP (tos 0x0, ttl 64, id 30934, offset 0, flags [DF], proto TCP (6), length 129)
+    127.0.0.1.38418 > 127.0.0.1.8080: Flags [P.], cksum 0xfe75 (incorrect -> 0xf1c0), seq 1:78, ack 1, win 512, options [nop,nop,TS val 2574865697 ecr 2574865697], length 77: HTTP, length: 77
+	GET / HTTP/1.1
+	Host: localhost:8080
+	User-Agent: curl/8.5.0
+	Accept: */*
+	
+E...x.@.@................,R.:;.......u.....
+.yU!.yU!GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.5.0
+Accept: */*
+
+
+23:53:50.201209 lo    In  IP (tos 0x0, ttl 64, id 23116, offset 0, flags [DF], proto TCP (6), length 52)
+    127.0.0.1.8080 > 127.0.0.1.38418: Flags [.], cksum 0xfe28 (incorrect -> 0x7507), seq 1, ack 78, win 511, options [nop,nop,TS val 2574865697 ecr 2574865697], length 0
+E..4ZL@.@..u............:;...,Ra.....(.....
+.yU!.yU!
+23:53:50.204300 lo    In  IP (tos 0x0, ttl 64, id 23117, offset 0, flags [DF], proto TCP (6), length 469)
+    127.0.0.1.8080 > 127.0.0.1.38418: Flags [P.], cksum 0xffc9 (incorrect -> 0x67f1), seq 1:418, ack 78, win 512, options [nop,nop,TS val 2574865700 ecr 2574865697], length 417: HTTP, length: 417
+	HTTP/1.1 200 OK
+	Date: Fri, 08 May 2026 23:53:50 GMT
+	Server: Apache/2.4.67 (Unix)
+	Last-Modified: Fri, 07 Nov 2025 08:23:08 GMT
+	ETag: "bf-642fce432f300"
+	Accept-Ranges: bytes
+	Content-Length: 191
+	Content-Type: text/html
+	
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+	<html>
+	<head>
+	<title>It works! Apache httpd</title>
+	</head>
+	<body>
+	<p>It works!</p>
+	</body>
+	</html>
+E...ZM@.@...............:;...,Ra...........
+.yU$.yU!HTTP/1.1 200 OK
+Date: Fri, 08 May 2026 23:53:50 GMT
+Server: Apache/2.4.67 (Unix)
+Last-Modified: Fri, 07 Nov 2025 08:23:08 GMT
+ETag: "bf-642fce432f300"
+Accept-Ranges: bytes
+Content-Length: 191
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>It works! Apache httpd</title>
+</head>
+<body>
+<p>It works!</p>
+</body>
+</html>
+
+23:53:50.204319 lo    In  IP (tos 0x0, ttl 64, id 30935, offset 0, flags [DF], proto TCP (6), length 52)
+    127.0.0.1.38418 > 127.0.0.1.8080: Flags [.], cksum 0xfe28 (incorrect -> 0x7362), seq 78, ack 418, win 509, options [nop,nop,TS val 2574865700 ecr 2574865700], length 0
+E..4x.@.@................,Ra:;.......(.....
+.yU$.yU$
+23:53:50.204590 lo    In  IP (tos 0x0, ttl 64, id 30936, offset 0, flags [DF], proto TCP (6), length 52)
+    127.0.0.1.38418 > 127.0.0.1.8080: Flags [F.], cksum 0xfe28 (incorrect -> 0x735e), seq 78, ack 418, win 512, options [nop,nop,TS val 2574865700 ecr 2574865700], length 0
+E..4x.@.@................,Ra:;.......(.....
+.yU$.yU$
+23:53:50.206569 lo    In  IP (tos 0x0, ttl 64, id 23118, offset 0, flags [DF], proto TCP (6), length 52)
+    127.0.0.1.8080 > 127.0.0.1.38418: Flags [F.], cksum 0xfe28 (incorrect -> 0x735b), seq 418, ack 79, win 512, options [nop,nop,TS val 2574865702 ecr 2574865700], length 0
+E..4ZN@.@..s............:;...,Rb.....(.....
+.yU&.yU$
+23:53:50.206587 lo    In  IP (tos 0x0
