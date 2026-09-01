@@ -1,4 +1,4 @@
-package ProductProfit;
+package productprofit;
 
 import java.util.Scanner;
 
