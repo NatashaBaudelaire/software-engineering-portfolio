@@ -1,4 +1,4 @@
-package DiscountAmount;
+package discountamount;
 
 import java.util.Scanner;
 
