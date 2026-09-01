@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 public class DiabetesTests {
     public int idTest;
