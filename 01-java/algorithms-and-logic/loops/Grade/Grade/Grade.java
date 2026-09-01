@@ -1,4 +1,4 @@
-package Grade;
+package grade;
 
 import java.util.Scanner;
 
