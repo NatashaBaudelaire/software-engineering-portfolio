@@ -1,4 +1,4 @@
-package Salary;
+package salary;
 
 import java.util.Scanner;
 
