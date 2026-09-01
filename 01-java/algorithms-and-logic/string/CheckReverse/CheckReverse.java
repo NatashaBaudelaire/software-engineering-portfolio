@@ -1,4 +1,4 @@
-package CheckReverse;
+package checkreverse;
 
 import java.util.Scanner;
 
