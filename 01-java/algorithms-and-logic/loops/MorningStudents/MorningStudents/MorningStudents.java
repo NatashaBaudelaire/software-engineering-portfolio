@@ -1,4 +1,4 @@
-package MorningStudents;
+package morningstudents;
 
 import java.util.Scanner;
 
