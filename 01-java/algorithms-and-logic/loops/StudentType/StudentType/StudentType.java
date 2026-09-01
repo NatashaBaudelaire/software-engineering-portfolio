@@ -1,4 +1,4 @@
-package StudentType;
+package studenttype;
 
 import java.util.Scanner;
 
