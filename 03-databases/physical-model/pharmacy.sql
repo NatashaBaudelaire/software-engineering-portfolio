@@ -1,6 +1,3 @@
-CREATE DATABASE pharmacy_db;
-USE pharmacy_db;
-
 CREATE TABLE address (
     address_id INT AUTO_INCREMENT PRIMARY KEY,
     zip_code VARCHAR(10),
