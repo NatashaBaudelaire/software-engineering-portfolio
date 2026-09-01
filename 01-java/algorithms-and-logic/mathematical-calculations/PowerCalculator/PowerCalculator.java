@@ -1,4 +1,4 @@
-package PowerCalculator;
+package powercalculator;
 
 import java.util.Scanner;
 
