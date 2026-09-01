@@ -1,4 +1,4 @@
-package TriangleArea;
+package trianglearea;
 
 import java.util.Scanner;
 
