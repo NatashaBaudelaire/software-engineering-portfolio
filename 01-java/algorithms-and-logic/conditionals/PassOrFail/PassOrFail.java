@@ -1,4 +1,4 @@
-package PassOrFail;
+package passorfail;
 
 import java.util.Scanner;
 
