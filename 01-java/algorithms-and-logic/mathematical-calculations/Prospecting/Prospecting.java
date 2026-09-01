@@ -1,4 +1,4 @@
-package Prospecting;
+package prospecting;
 
 import java.util.Scanner;
 
