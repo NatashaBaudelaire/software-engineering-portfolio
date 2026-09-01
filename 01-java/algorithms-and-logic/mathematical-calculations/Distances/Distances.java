@@ -1,4 +1,4 @@
-package Distances;
+package distances;
 
 import java.util.Scanner;
 
