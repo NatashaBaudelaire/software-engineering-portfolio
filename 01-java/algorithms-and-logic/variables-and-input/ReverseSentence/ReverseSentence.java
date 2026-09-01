@@ -1,4 +1,4 @@
-package ReverseSentence;
+package reversesentence;
 
 import java.util.Scanner;
 
