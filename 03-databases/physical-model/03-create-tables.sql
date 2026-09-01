@@ -1,0 +1,80 @@
+CREATE TABLE COMPANY (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    address VARCHAR(255)
+);
+CREATE TABLE AGENT (
+    agentId VARCHAR(11) PRIMARY KEY,
+    agentName VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE PERSON (
+    ssn VARCHAR(11) PRIMARY KEY,
+    fullName VARCHAR(100) NOT NULL,
+    driverLicense VARCHAR(20)
+);
+
+CREATE TABLE VEHICLE (
+    plate VARCHAR(10) PRIMARY KEY,
+    year YEAR NOT NULL,
+    model VARCHAR(100) NOT NULL,
+    state CHAR(2) NOT NULL,
+    ownerSsn VARCHAR(11),
+    FOREIGN KEY (ownerSsn) REFERENCES PERSON(ssn)
+);
+
+CREATE TABLE TRUCK (
+    plate VARCHAR(10) PRIMARY KEY,
+    axleCount INT NOT NULL,
+    weight DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (plate) REFERENCES VEHICLE(plate)
+);
+
+CREATE TABLE CAR (
+    plate VARCHAR(10) PRIMARY KEY,
+    doorCount INT NOT NULL,
+    description VARCHAR(255),
+    FOREIGN KEY (plate) REFERENCES VEHICLE(plate)
+);
+
+CREATE TABLE PHONES (
+    ssn VARCHAR(11),
+    phoneNumber VARCHAR(15) NOT NULL,
+    PRIMARY KEY (ssn, phoneNumber),
+    FOREIGN KEY (ssn) REFERENCES PERSON(ssn)
+);
+
+CREATE TABLE INFRACTIONTYPE (
+    infractionTypeId INT PRIMARY KEY AUTO_INCREMENT,
+    severityLevel INT NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    description VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE TICKET (
+    ticketId INT PRIMARY KEY AUTO_INCREMENT,
+    dueDate DATE NOT NULL
+);
+
+CREATE TABLE LOCATION (
+    locationId INT PRIMARY KEY AUTO_INCREMENT,
+    speedLimit INT NOT NULL,
+    street VARCHAR(255) NOT NULL,
+    position VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE INFRACTION (
+    infractionId INT PRIMARY KEY AUTO_INCREMENT,
+    speed DECIMAL(5, 2) NOT NULL,
+    infractionDate DATE NOT NULL,
+    infractionTypeId INT,
+    plate VARCHAR(10),
+    agentId VARCHAR(11),
+    locationId INT,
+    ticketId INT,
+    FOREIGN KEY (infractionTypeId) REFERENCES INFRACTIONTYPE(infractionTypeId),
+    FOREIGN KEY (plate) REFERENCES VEHICLE(plate),
+    FOREIGN KEY (agentId) REFERENCES AGENT(agentId),
+    FOREIGN KEY (locationId) REFERENCES LOCATION(locationId),
+    FOREIGN KEY (ticketId) REFERENCES TICKET(ticketId)
+);

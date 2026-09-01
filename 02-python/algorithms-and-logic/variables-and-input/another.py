@@ -1,0 +1,5 @@
+text = input('Enter any text: ')
+print(text.strip())
+word = input('Enter the word to be counted: ')
+new_word = input('Enter the new word: ')
+print(text.replace(word, new_word))

@@ -1,0 +1,11 @@
+Tutorial Guide: Capturing and Analyzing HTTP and FTP Traffic with tcpdump on Google Cloud Shell
+
+1. Install tcpdump in the environment:
+bashsudo apt install tcpdump -y
+
+2. To capture HTTP traffic (port 8080), run the command below in another terminal:
+bashsudo tcpdump -i any port 8080 -n -vv
+
+Access the Apache application in the browser (via Web Preview) and observe the captured HTTP requests.
+
+Copy the traffic output for analysis with GPT.
