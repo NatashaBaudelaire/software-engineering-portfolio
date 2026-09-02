@@ -1,4 +1,4 @@
-package DigitalThermometerTest;
+package digitalthermometertest;
 
 import java.util.Scanner;
 
