@@ -1,4 +1,4 @@
-package Vehicle;
+package vehicle;
 
 /**
  * Represents a vehicle manufacturer with a company name and country of origin.
