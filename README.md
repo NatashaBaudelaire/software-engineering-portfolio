@@ -49,22 +49,22 @@ Cloud computing infrastructure and services exercises.
 - **FTP Server Practice**: File transfer protocol server implementation
 - **HTTP Traffic Capture Analysis**: Network traffic monitoring and analysis
 
-### 📁 06-software-testing
+### 📁 05-software-testing
 Software testing methodologies and practices.
 
 - **Manual Testing**: Manual testing techniques and procedures
 - **Test Case Design**: Test case creation and design principles
 - **Unit Testing**: Automated unit testing implementation
 
-### 📁 07-artificial-intelligence
+### 📁 06-artificial-intelligence
 Machine learning and artificial intelligence projects.
 
-- **Supervised Model Training**: 
+- **Supervised Model Training**:
   - Cats vs Dogs classification
   - Code autocomplete using LSTM
   - Image classifier using CNN
 
-### 📁 08-data-science
+### 📁 07-data-science
 Data science projects covering the complete data pipeline.
 
 - **Data Acquisition Sharing**: Data collection and sharing methodologies
