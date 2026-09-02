@@ -1,4 +1,4 @@
-package AppTestAccountBank;
+package apptestaccountbank;
 
 
 public class AccountBank {
