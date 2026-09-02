@@ -1,6 +1,6 @@
-package Controller;
+package controller;
 
-import Device.Device;
+import device.Device;
 
 public class Controller {
     private Device device;
