@@ -1,4 +1,4 @@
-package Vehicle;
+package vehicle;
 
 public class VehicleAppList {
     private static int counter = 1;
