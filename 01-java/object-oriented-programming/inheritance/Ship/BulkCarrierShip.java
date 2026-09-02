@@ -1,4 +1,4 @@
-package Ship;
+package ship;
 
 public class BulkCarrierShip extends Ship {
     public BulkCarrierShip(String name, double cargoCapacity, int cranes, int layers, int hatches) {
