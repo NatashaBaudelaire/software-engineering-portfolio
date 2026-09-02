@@ -1,4 +1,4 @@
-package Ship;
+package ship;
 
 public class Ship {
     private static int idCounter = 101;
