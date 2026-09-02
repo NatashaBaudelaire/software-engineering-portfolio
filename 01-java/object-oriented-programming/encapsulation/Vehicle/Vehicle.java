@@ -1,4 +1,4 @@
-package Vehicle;
+package vehicle;
 
 public class Vehicle {
     private static int idCounter = 1;
