@@ -70,7 +70,6 @@ Data hiding and encapsulation exercises:
 #### inheritance
 Inheritance hierarchy exercises:
 - **ship**: Ship inheritance hierarchy (bulk carriers, container ships)
-- **ships**: Alternative ship implementation with inheritance
 - **trip**: Trip management with inheritance
 
 #### aggregation-and-compositions
