@@ -1,4 +1,4 @@
-package DigitalThermometerTest;
+package digitalthermometertest;
 
 public class DigitalThermometer {
     private String serialNumber;
