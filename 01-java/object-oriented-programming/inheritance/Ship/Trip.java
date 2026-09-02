@@ -72,8 +72,8 @@ public class Trip {
     }
 
     public boolean startTrip() {
-        Ship ship = (containerShip != null) ? containerShip : bulkCarrierShip;
-        if (ship != null && ship.getStatus() == Ship.Status.LOADED) {
+        Ship vessel = (containerShip != null) ? containerShip : bulkCarrierShip;
+        if (vessel != null && vessel.getStatus() == Ship.Status.LOADED) {
             situation = Situation.ONGOING;
             return true;
         }
@@ -81,8 +81,8 @@ public class Trip {
     }
 
     public boolean finishTrip() {
-        Ship ship = (containerShip != null) ? containerShip : bulkCarrierShip;
-        if (ship != null && ship.getStatus() == Ship.Status.VACANT) {
+        Ship vessel = (containerShip != null) ? containerShip : bulkCarrierShip;
+        if (vessel != null && vessel.getStatus() == Ship.Status.VACANT) {
             situation = Situation.FINISHED;
             return true;
         }
