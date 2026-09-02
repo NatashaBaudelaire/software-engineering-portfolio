@@ -1,4 +1,4 @@
-package Printer;
+package printer;
 
 public class PrintJobsAppTest {
     public static void main(String[] args) {
