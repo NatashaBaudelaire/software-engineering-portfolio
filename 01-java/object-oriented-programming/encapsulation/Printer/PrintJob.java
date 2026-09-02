@@ -1,4 +1,4 @@
-package Printer;
+package printer;
 
 public class PrintJob {
     private int printerId;
