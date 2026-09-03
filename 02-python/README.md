@@ -68,6 +68,16 @@ Variable handling and user input processing:
 Practical automation and file management scripts:
 - **organize_files**: File organization automation script
 
+## Exercise Distribution Note
+
+The distribution of exercises across categories reflects natural learning progression:
+- **Variables & Input (33 exercises)**: Extensive practice with foundational concepts
+- **Conditionals (20 exercises)**: Building decision-making skills through repetition  
+- **Functions (1 exercise)**: Placeholder for function concepts (to be expanded)
+- **Loops (2 exercises)**: Basic iteration examples (to be expanded)
+
+This distribution shows focused practice on fundamental concepts before advancing to more complex topics like functions and loops.
+
 ## How to Run the Exercises
 
 ### Prerequisites
