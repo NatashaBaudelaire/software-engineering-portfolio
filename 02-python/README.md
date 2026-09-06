@@ -32,12 +32,19 @@ Exercises focusing on conditional statements and decision-making logic:
 
 #### functions
 Function definition and usage exercises:
-- **donothing**: Basic function structure
+- **schedule_mapping**: Dictionary-based schedule lookup with multiple functions
+- **mathematical_verification**: Recursive mathematical sequence verification
+- **simple_calculator**: Basic calculator with modular function design
 
 #### loops
 Iterative programming exercises:
 - **oddnumbers**: Odd number generation
 - **positive**: Positive number processing
+- **graph_pathfinder**: Graph traversal with DFS visualization
+- **amongus_voting_simulator**: Voting simulation with loops
+- **medicine_battle_simulator**: Subarray sum problem with nested loops
+- **skrulli_invasion_simulator**: Event-driven simulation with loops
+- **spider_vs_rhino_battle_simulator**: Turn-based battle simulation
 
 #### mathematical-calculations
 Mathematical and computational exercises:
@@ -70,13 +77,15 @@ Practical automation and file management scripts:
 
 ## Exercise Distribution Note
 
-The distribution of exercises across categories reflects natural learning progression:
-- **Variables & Input (33 exercises)**: Extensive practice with foundational concepts
-- **Conditionals (20 exercises)**: Building decision-making skills through repetition  
-- **Functions (1 exercise)**: Placeholder for function concepts (to be expanded)
-- **Loops (2 exercises)**: Basic iteration examples (to be expanded)
+The distribution of exercises across categories has been reorganized for better balance:
+- **Variables & Input (26 exercises)**: Extensive practice with foundational concepts
+- **Conditionals (19 exercises)**: Building decision-making skills through repetition
+- **Functions (3 exercises)**: Function concepts with practical examples
+- **Loops (7 exercises)**: Iteration and algorithmic thinking
+- **Mathematical Calculations (18 exercises)**: Mathematical operations and algorithms
+- **Strings (7 exercises)**: String manipulation and text processing
 
-This distribution shows focused practice on fundamental concepts before advancing to more complex topics like functions and loops.
+The reorganized distribution provides a more balanced learning experience while maintaining focus on fundamental concepts.
 
 ## How to Run the Exercises
 
