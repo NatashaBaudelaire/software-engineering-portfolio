@@ -1,4 +1,4 @@
-package controller;
+package device.controller;
 
 import device.Device;
 
