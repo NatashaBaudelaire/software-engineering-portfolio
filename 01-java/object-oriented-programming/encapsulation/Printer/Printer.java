@@ -48,6 +48,11 @@ public class Printer {
         }
     }
 
+    public void receivePrintJob(String fileName) {
+        PrintJob job = new PrintJob(fileName, this.printerId);
+        receivePrint(job);
+    }
+
     public void finishPrint() {
         if (!printJobs.isEmpty()) {
             printJobs.remove(0);
@@ -55,5 +60,20 @@ public class Printer {
         if (printJobs.isEmpty()) {
             printing = false;
         }
+    }
+
+    public void finishNextPrintJob() {
+        finishPrint();
+    }
+
+    public void showPrintQueue() {
+        System.out.println(toString());
+        for (int i = 0; i < printJobs.size(); i++) {
+            System.out.println("  " + (i + 1) + ". " + printJobs.get(i).getFileName());
+        }
+    }
+
+    public boolean isPrintQueueEmpty() {
+        return printJobs.isEmpty();
     }
 }
