@@ -1,17 +1,17 @@
 def convert_to_integers(string_list):
     integer_numbers = []
-    
+
     for element in string_list:
         try:
             number = int(element)
             integer_numbers.append(number)
-            print(f"✓ '{element}' converted to {number}")
-            
+            print(f"[OK] '{element}' converted to {number}")
+
         except ValueError:
-            print(f"✗ Error: '{element}' cannot be converted to an integer")
-            
+            print(f"[ERROR] '{element}' cannot be converted to an integer")
+
         except Exception as e:
-            print(f"✗ Unexpected error converting '{element}': {e}")
+            print(f"[ERROR] Unexpected error converting '{element}': {e}")
     return integer_numbers
 
 def main():
