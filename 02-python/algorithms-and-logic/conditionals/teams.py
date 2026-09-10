@@ -27,6 +27,8 @@ def main():
 
     if choice not in teams:
         print("Team not found. Please choose one of the listed teams.")
+    else:
+        print(f"{choice} has {teams[choice]} points.")
 
 if __name__ == "__main__":
     main()
