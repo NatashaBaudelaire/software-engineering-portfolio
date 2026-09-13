@@ -9,42 +9,42 @@ Basic programming concepts and algorithmic exercises.
 
 #### conditionals
 Exercises focusing on conditional statements and decision-making logic:
-- **billamount**: Bill splitting calculation with weighted distribution
-- **bmibodymassindex**: BMI calculation and health categorization
+- **bodymassindex**: Body mass index (BMI) calculation
 - **discountamount**: Discount calculation based on purchase amount
 - **evenodd**: Number parity checking
+- **glucoselevel**: Blood glucose level diagnosis (normal, prediabetes, diabetes)
 - **passorfail**: Pass/fail grade determination
-- **retirementtime**: Retirement years calculation
-- **salary**: Salary survey with statistical analysis
-- **speed**: Speed limit checking
-- **tests**: Medical test result evaluation
-- **vote**: Voting eligibility checker
+- **retirementeligibility**: Retirement eligibility calculation
+- **salarysurvey**: Salary survey with statistical analysis
+- **speedlimitcheck**: Speed limit checking
+- **votingeligibility**: Voting eligibility checker
+- **weightedbillsplit**: Weighted bill splitting calculation
 
 #### loops
 Exercises focusing on iterative programming:
 - **employee**: Employee data processing
-- **employeefixed**: Fixed-term employee calculations
+- **employeevalidation**: Employee salary calculation with input validation
+- **evennumbers**: Even number sequence generation
 - **grade**: Grade calculation and categorization
-- **morningstudents**: Morning student statistics
-- **number**: Number sequence processing
-- **numberinteger**: Integer number operations
+- **countup**: Count-up sequence from 1 to a chosen integer
+- **studentshifts**: Student shift statistics
 - **remotework**: Remote work statistics
-- **studenttype**: Student type classification
+- **studentfee**: Student fee calculation
 
 #### mathematical-calculations
 Mathematical and geometric calculations:
 - **areaandvolumeofasphere**: Sphere area and volume calculations
 - **areacalculation**: Various area calculations
-- **cylinderarea**: Cylinder surface area calculation
-- **distances**: Distance calculations between points
+- **averages**: Arithmetic and weighted mean calculations
+- **cylindervolume**: Cylinder volume calculation
+- **pointdistance3d**: Distance between two 3D points
 - **powercalculator**: Power and exponent calculations
 - **productprofit**: Product profit analysis
-- **prospecting**: Prospecting calculations
 - **trianglearea**: Triangle area calculation
 
-#### string
+#### strings
 String manipulation and processing:
-- **characters**: Character manipulation and analysis
+- **characteranalysis**: Character analysis and counting
 - **checkreverse**: String reversal checking
 - **comparewords**: Word comparison operations
 
@@ -61,18 +61,17 @@ Object-oriented programming concepts and design patterns.
 
 #### encapsulation
 Data hiding and encapsulation exercises:
-- **apptestaccountbank**: Bank account system with encapsulation
+- **bankaccount**: Bank account system with encapsulation
 - **device**: Device controller with encapsulated state
-- **digitalthermometertest**: Digital thermometer implementation
+- **digitalthermometer**: Digital thermometer implementation
 - **printer**: Printer job management system
 - **vehicle**: Vehicle and manufacturer management
 
 #### inheritance
 Inheritance hierarchy exercises:
-- **ship**: Ship inheritance hierarchy (bulk carriers, container ships)
-- **trip**: Trip management with inheritance
+- **ship**: Ship inheritance hierarchy (bulk carriers, container ships) and trip management
 
-#### aggregation-and-compositions
+#### aggregation-and-composition
 Object relationship exercises:
 - **resource**: Resource management with aggregation/composition
 
@@ -86,13 +85,13 @@ Object relationship exercises:
 
 ```bash
 # Navigate to the specific exercise directory
-cd algorithms-and-logic/conditionals/billamount
+cd algorithms-and-logic/conditionals/weightedbillsplit
 
 # Compile the Java file
-javac BillAmount.java
+javac WeightedBillSplit.java
 
 # Run the compiled program
-java billamount.BillAmount
+java weightedbillsplit.WeightedBillSplit
 ```
 
 ### Using an IDE

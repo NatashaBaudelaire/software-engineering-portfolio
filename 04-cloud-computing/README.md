@@ -4,7 +4,7 @@ This directory contains cloud computing exercises focused on infrastructure setu
 
 ## Directory Structure
 
-### 📁 apache-setup-testing-cloud-shell
+### 📁 apache-cloud-shell-setup
 Apache web server setup and testing in cloud environments.
 
 **Content:**

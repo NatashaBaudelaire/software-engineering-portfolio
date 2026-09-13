@@ -45,7 +45,7 @@ Database design and modeling exercises covering different levels of abstraction.
 ### 📁 04-cloud-computing
 Cloud computing infrastructure and services exercises.
 
-- **Apache Setup Testing Cloud Shell**: Web server configuration and testing in cloud environments
+- **Apache Cloud Shell Setup**: Web server configuration and testing in cloud environments
 - **FTP Server Practice**: File transfer protocol server implementation
 - **HTTP Traffic Capture Analysis**: Network traffic monitoring and analysis
 
@@ -67,8 +67,8 @@ Machine learning and artificial intelligence projects.
 ### 📁 07-data-science
 Data science projects covering the complete data pipeline.
 
-- **Data Acquisition Sharing**: Data collection and sharing methodologies
-- **Data Analysis Visualization**: Exploratory data analysis and visualization techniques
+- **Data Acquisition and Sharing**: Data collection and sharing methodologies
+- **Data Analysis and Visualization**: Exploratory data analysis and visualization techniques
 - **Data Preprocessing**: Data cleaning and preparation (e.g., Pima Indian Diabetes dataset)
 - **Exploratory Data Analysis**: Traffic accident severity detection analysis
 
@@ -79,13 +79,13 @@ To compile and run Java exercises:
 
 ```bash
 # Navigate to the exercise directory
-cd 01-java/algorithms-and-logic/conditionals/billamount
+cd 01-java/algorithms-and-logic/conditionals/weightedbillsplit
 
 # Compile the Java file
-javac BillAmount.java
+javac WeightedBillSplit.java
 
 # Run the compiled program
-java billamount.BillAmount
+java weightedbillsplit.WeightedBillSplit
 ```
 
 ### Python Exercises
@@ -96,7 +96,7 @@ To run Python exercises:
 cd 02-python/algorithms-and-logic/conditionals
 
 # Run the Python script
-python add.py
+python arithmetic_calculator.py
 ```
 
 ### Jupyter Notebooks
@@ -104,7 +104,7 @@ For data science and AI projects using Jupyter Notebooks:
 
 ```bash
 # Navigate to the notebook directory
-cd 08-data-science/exploratory-data-analysis
+cd 07-data-science/exploratory-data-analysis
 
 # Start Jupyter Notebook
 jupyter notebook

@@ -4,7 +4,7 @@ This directory contains data science projects covering the complete data pipelin
 
 ## Directory Structure
 
-### 📁 data-acquisition-sharing
+### 📁 data-acquisition-and-sharing
 Data collection and sharing methodologies and practices.
 
 **Content:**
@@ -15,7 +15,7 @@ Data collection and sharing methodologies and practices.
 - Data format considerations (CSV, JSON, XML)
 - Ethical considerations in data collection
 
-### 📁 data-analysis-visualization
+### 📁 data-analysis-and-visualization
 Exploratory data analysis and visualization techniques.
 
 **Content:**
@@ -104,7 +104,7 @@ pip install openpyxl xlrd
 
 ```bash
 # Navigate to the data science directory
-cd 08-data-science
+cd 07-data-science
 
 # Create a virtual environment (recommended)
 python -m venv ds_env
@@ -132,14 +132,14 @@ jupyter notebook
 # Run cells sequentially to execute the analysis
 ```
 
-### Running Python Scripts
+### Running Jupyter Notebooks
 
 ```bash
 # Navigate to the specific project directory
 cd data-preprocessing
 
-# Run the Python script
-python pima_diabetes.py
+# Run the Jupyter Notebook
+jupyter notebook pima_diabetes.ipynb
 ```
 
 ## Project Details
