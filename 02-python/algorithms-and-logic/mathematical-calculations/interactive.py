@@ -12,7 +12,7 @@ def solve():
         except ValueError:
             return
 
-        pokedex_map = {}
+        creature_index_map = {}
         elements_map = {}
 
         for _ in range(N):
@@ -25,14 +25,14 @@ def solve():
                 if len(parts) < 2:
                     continue
 
-                pokemon = parts[0]
+                creature = parts[0]
                 element = parts[1]
 
-                pokedex_map[pokemon] = element
+                creature_index_map[creature] = element
 
                 if element not in elements_map:
                     elements_map[element] = []
-                elements_map[element].append(pokemon)
+                elements_map[element].append(creature)
 
             except EOFError:
                 break
@@ -43,17 +43,17 @@ def solve():
                 if not command:
                     break
 
-                if command == 'Pokemon':
-                    pokemon_name = sys.stdin.readline().strip()
-                    if not pokemon_name:
+                if command == 'Creature':
+                    creature_name = sys.stdin.readline().strip()
+                    if not creature_name:
                         break
 
-                    if pokemon_name in pokedex_map:
-                        element = pokedex_map[pokemon_name]
+                    if creature_name in creature_index_map:
+                        element = creature_index_map[creature_name]
                         quantity = len(elements_map[element])
-                        print(f"The Pokémon {pokemon_name} has element {element}. There are {quantity} Pokémon with element {element}")
+                        print(f"The Creature {creature_name} has element {element}. There are {quantity} Creatures with element {element}")
                     else:
-                        print(f"The Pokémon {pokemon_name} does not exist in the Pokédex")
+                        print(f"The Creature {creature_name} does not exist in the CreatureIndex")
 
                 elif command == 'Element':
                     element_name = sys.stdin.readline().strip()
@@ -61,15 +61,15 @@ def solve():
                         break
 
                     if element_name in elements_map:
-                        pokemon_list = elements_map[element_name]
-                        pokemons_str = " ".join(pokemon_list)
-                        print("The Pokémon in the Pokédex with this element are:")
-                        print(pokemons_str)
+                        creature_list = elements_map[element_name]
+                        creatures_str = " ".join(creature_list)
+                        print("The Creatures in the CreatureIndex with this element are:")
+                        print(creatures_str)
                     else:
-                        print(f"There are no Pokémon in the Pokédex with element {element_name}")
+                        print(f"There are no Creatures in the CreatureIndex with element {element_name}")
 
                 else:
-                    print("Command is neither Pokémon nor Element. Programme terminated!")
+                    print("Command is neither Creature nor Element. Programme terminated!")
                     break
 
             except EOFError:
