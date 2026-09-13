@@ -1,162 +1,131 @@
-# Fundamentals of Backend Development
+# Software Engineering Coursework
 
-This repository contains a collection of exercises, projects, and study materials that I created while learning various programming languages and backend development concepts. It serves as a portfolio of my learning journey and demonstrates my progression through different technologies and methodologies.
+A personal collection of self-contained coursework and exercises spanning programming fundamentals, database design, cloud computing, software testing, and data science. The repository documents a progressive learning path across multiple technologies, from basic algorithms and object-oriented programming in Java and Python, through relational database modeling and cloud services, to automated testing and exploratory data science.
 
 ## Repository Structure
 
-The repository is organized by programming language and technology domain:
+```
+software-engineering-coursework/
+├── 01-programming-languages/
+│   ├── java/
+│   │   ├── algorithms-and-problem-solving/   # conditionals, loops, maths, strings, variables & input
+│   │   └── object-oriented-programming/      # encapsulation, inheritance, aggregation & composition
+│   └── python/
+│       ├── algorithms-and-problem-solving/   # conditionals, functions, loops, maths, strings, variables & input
+│       └── file-handling/                    # file organization automation
+├── 02-databases/
+│   ├── conceptual-model/                     # entity-relationship diagrams (PNG)
+│   ├── logical-model/                        # logical schemas (PNG)
+│   └── physical-model/                       # SQL DDL scripts
+├── 03-cloud-computing/
+│   ├── apache-cloud-shell-setup/
+│   ├── ftp-server-practice/
+│   └── http-traffic-capture-analysis/
+├── 04-software-testing/
+│   ├── manual-testing/
+│   ├── test-case-design/
+│   │   └── vehiculardevice/
+│   └── unit-testing/
+│       └── calculator/
+├── 05-artificial-intelligence/               # module notes only (no implementation artifacts yet)
+└── 06-data-science/
+    ├── data-analysis-and-visualization/
+    ├── data-preprocessing/
+    └── exploratory-data-analysis/
+```
 
-### 📁 01-java
-Java programming exercises covering fundamental concepts and object-oriented programming principles.
+## Technologies
 
-**Algorithms and Logic:**
-- **Conditionals**: Bill splitting, BMI calculation, discount calculations, even/odd checks, pass/fail logic, retirement planning, salary surveys, speed calculations, voting eligibility, and medical tests
-- **Loops**: Employee data processing, grade calculations, student categorization, number sequences, remote work statistics
-- **Mathematical Calculations**: Area and volume calculations (spheres, cylinders, triangles), distance calculations, power calculations, profit analysis
-- **String Operations**: Character manipulation, string reversal, word comparison
-- **Variables and Input**: Time conversions, odometer readings, sentence reversal, ticket sales tracking
+- **Java** (JDK 8+) — exercise programs, with JUnit 5 for automated tests
+- **Python** (3.10+) — scripts, including structural pattern matching (`match`/`case`)
+- **SQL** — DDL schemas for the physical database model
+- **Markdown** — module documentation and cloud computing guides
+- **Jupyter Notebooks** — data science analysis (pandas, NumPy, Matplotlib, Seaborn)
 
-**Object-Oriented Programming:**
-- **Encapsulation**: Bank accounts, device controllers, digital thermometers, printer systems, vehicle management
-- **Inheritance**: Ship hierarchy (bulk carriers, container ships), trip management
-- **Aggregation and Composition**: Resource management systems
+## Coursework Modules
 
-### 📁 02-python
-Python programming exercises focused on algorithms, logic, and practical applications.
+### 01 · Programming Languages
 
-**Algorithms and Logic:**
-- **Conditionals**: Basic operations, vowel detection, alert systems, athlete classification, beer song algorithm, binary search book manager, unit converters, datetime operations, K-pop ranking, game mechanics (magic power, opponent battles), management systems, maze solvers, ping monitoring, ranking trackers, calculators, student score reports, team management
-- **Functions**: Function definitions and usage
-- **Loops**: Number sequences and iterations
-- **Mathematical Calculations**: Arithmetic operations, temperature conversion, Fibonacci sequences, fuel calculations, wage calculators, matrix operations, prime factorization
-- **String Operations**: Text processing and manipulation
-- **Variables and Input**: Data input and variable handling
+**Java** (`01-programming-languages/java/`) — 34 exercises in `algorithms-and-problem-solving/` across conditionals (10), loops (8), mathematical calculations (8), strings (3), and variables & input (5). The `object-oriented-programming/` area covers encapsulation (bank accounts, devices, digital thermometers, printers, vehicles), inheritance (ship hierarchy), and aggregation/composition (resource management). See `01-programming-languages/java/README.md`.
 
-**Porto Digital Residence:**
-- File organization and automation scripts
+**Python** (`01-programming-languages/python/`) — 80 scripts: 79 exercises plus a file-handling automation script (`organize_files.py`). Covers conditionals (17), functions (3), loops (8), mathematical calculations (22), strings (7), variables & input (22), and file handling. See `01-programming-languages/python/README.md`.
 
-### 📁 03-databases
-Database design and modeling exercises covering different levels of abstraction.
+### 02 · Databases
 
-- **Conceptual Model**: High-level database design and entity relationships
-- **Logical Model**: Detailed logical database structures
-- **Physical Model**: Implementation-ready database schemas
+Database modeling at three levels of abstraction: conceptual models (4 entity-relationship diagrams), logical models (7 schemas), and physical models (9 SQL DDL scripts). See `02-databases/README.md`.
 
-### 📁 04-cloud-computing
-Cloud computing infrastructure and services exercises.
+### 03 · Cloud Computing
 
-- **Apache Cloud Shell Setup**: Web server configuration and testing in cloud environments
-- **FTP Server Practice**: File transfer protocol server implementation
-- **HTTP Traffic Capture Analysis**: Network traffic monitoring and analysis
+Hands-on cloud and network exercises documented as text guides: Apache web server setup on Google Cloud Shell, FTP server practice, and HTTP traffic capture with tcpdump analysis. See `03-cloud-computing/README.md`.
 
-### 📁 05-software-testing
-Software testing methodologies and practices.
+### 04 · Software Testing
 
-- **Manual Testing**: Manual testing techniques and procedures
-- **Test Case Design**: Test case creation and design principles
-- **Unit Testing**: Automated unit testing implementation
+Testing practice across manual testing (candidate status evaluation logic), test-case design (a `VehicularDevice` domain model with a 16-case JUnit suite covering movement, door, and alarm scenarios), and unit testing (a simple calculator with JUnit tests). See `04-software-testing/README.md`.
 
-### 📁 06-artificial-intelligence
-Machine learning and artificial intelligence projects.
+### 05 · Artificial Intelligence
 
-- **Supervised Model Training**:
-  - Cats vs Dogs classification
-  - Code autocomplete using LSTM
-  - Image classifier using CNN
+Module documentation and learning roadmap only; no implementation code is committed at this time. See `05-artificial-intelligence/README.md`.
 
-### 📁 07-data-science
-Data science projects covering the complete data pipeline.
+### 06 · Data Science
 
-- **Data Acquisition and Sharing**: Data collection and sharing methodologies
-- **Data Analysis and Visualization**: Exploratory data analysis and visualization techniques
-- **Data Preprocessing**: Data cleaning and preparation (e.g., Pima Indian Diabetes dataset)
-- **Exploratory Data Analysis**: Traffic accident severity detection analysis
+Jupyter notebooks for data analysis and visualization (diabetes), data preprocessing (house prices, Pima Indian diabetes), and exploratory data analysis (traffic accident severity). Each notebook references a local CSV dataset that is excluded from version control. See `06-data-science/README.md`.
 
-## How to Use This Repository
+## Getting Started
 
-### Java Exercises
-To compile and run Java exercises:
+Prerequisites:
+
+- **Java**: JDK 8+ for the Java exercises, JUnit 5 for the test suites
+- **Python**: 3.10+ (some scripts use `match`/`case`)
+- **Jupyter**: for the notebooks — `pip install jupyter pandas numpy matplotlib seaborn`
+
+## Usage
+
+**Java exercise**
 
 ```bash
-# Navigate to the exercise directory
-cd 01-java/algorithms-and-logic/conditionals/weightedbillsplit
-
-# Compile the Java file
+cd 01-programming-languages/java/algorithms-and-problem-solving/conditionals/weightedbillsplit
 javac WeightedBillSplit.java
-
-# Run the compiled program
 java weightedbillsplit.WeightedBillSplit
 ```
 
-### Python Exercises
-To run Python exercises:
+**Python exercise**
 
 ```bash
-# Navigate to the exercise directory
-cd 02-python/algorithms-and-logic/conditionals
-
-# Run the Python script
+cd 01-programming-languages/python/algorithms-and-problem-solving/conditionals
 python arithmetic_calculator.py
 ```
 
-### Jupyter Notebooks
-For data science and AI projects using Jupyter Notebooks:
+**JUnit 5 tests**
 
 ```bash
-# Navigate to the notebook directory
-cd 07-data-science/exploratory-data-analysis
-
-# Start Jupyter Notebook
-jupyter notebook
-
-# Open the desired .ipynb file in the browser
+cd 04-software-testing/test-case-design/vehiculardevice
+javac VehicularDevice.java VehicularDeviceTest.java VehicularDeviceTestSuite.java
+java -jar junit-platform-console-standalone.jar --class-path . --select-class vehiculardevice.VehicularDeviceTestSuite
 ```
 
-## Prerequisites
+**Jupyter notebooks**
 
-### Java
-- Java Development Kit (JDK) 8 or higher
-- Text editor or IDE (IntelliJ IDEA, Eclipse, VS Code)
+```bash
+cd 06-data-science/exploratory-data-analysis
+jupyter notebook
+```
 
-### Python
-- Python 3.7 or higher
-- pip package manager
+## Documentation
 
-### Data Science & AI
-- Python 3.7+
-- Jupyter Notebook
-- Required libraries:
-  ```bash
-  pip install pandas numpy matplotlib seaborn scikit-learn tensorflow
-  ```
+Each module ships its own `README.md` describing the exercises and how to run them:
 
-### Cloud Computing
-- Cloud platform account (Google Cloud, AWS, etc.)
-- Basic understanding of cloud services
-
-## Learning Progression
-
-This repository demonstrates a systematic approach to learning backend development:
-
-1. **Fundamental Programming**: Starting with basic algorithms and logic in Java and Python
-2. **Object-Oriented Programming**: Moving to OOP concepts and design patterns
-3. **Database Design**: Understanding data modeling and database architecture
-4. **Cloud Infrastructure**: Learning cloud services and deployment
-5. **Software Quality**: Implementing testing methodologies
-6. **Advanced Topics**: Exploring AI/ML and data science applications
+- `01-programming-languages/java/README.md`
+- `01-programming-languages/python/README.md`
+- `02-databases/README.md`
+- `03-cloud-computing/README.md`
+- `04-software-testing/README.md`
+- `05-artificial-intelligence/README.md`
+- `06-data-science/README.md`
 
 ## Contributing
 
-This is a personal learning repository, but suggestions and improvements are welcome. Feel free to open issues or submit pull requests for any corrections or enhancements.
+This is a personal coursework repository, but suggestions and corrections are welcome via issues or pull requests. Please keep changes consistent with the repository conventions: lowercase package/class names matching their folder names, snake_case Python module names, and self-contained exercises.
 
 ## License
 
-This repository is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-For questions or discussions about the exercises and projects in this repository, please open an issue or reach out through the appropriate channels.
-
----
-
-**Note**: This repository represents a learning journey and contains exercises from various courses and self-study projects. Some exercises may be simplified versions of real-world scenarios for educational purposes.
+This repository is licensed under the [MIT License](LICENSE).
