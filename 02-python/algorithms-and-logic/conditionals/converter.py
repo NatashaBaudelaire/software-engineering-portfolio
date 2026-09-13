@@ -1,3 +1,9 @@
+import sys
+
+# Configure UTF-8 encoding for Windows terminal compatibility
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
 def convert_to_integers(string_list):
     integer_numbers = []
 
@@ -5,13 +11,13 @@ def convert_to_integers(string_list):
         try:
             number = int(element)
             integer_numbers.append(number)
-            print(f"[OK] '{element}' converted to {number}")
+            print(f"✓ '{element}' converted to {number}")
 
         except ValueError:
-            print(f"[ERROR] '{element}' cannot be converted to an integer")
+            print(f"✗ '{element}' cannot be converted to an integer")
 
         except Exception as e:
-            print(f"[ERROR] Unexpected error converting '{element}': {e}")
+            print(f"✗ Unexpected error converting '{element}': {e}")
     return integer_numbers
 
 def main():
