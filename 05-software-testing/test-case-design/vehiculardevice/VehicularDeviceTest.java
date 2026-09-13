@@ -116,4 +116,89 @@ public class VehicularDeviceTest {
             assertFalse(vd.isDoorLocked(i), "Door " + i + " should not be locked");
         }
     }
+
+    @Test
+    @DisplayName("Moving with an active alarm should return false and keep the vehicle stationary")
+    void move_withActiveAlarm_shouldReturnFalse() {
+
+        vd.setRunning(true);
+        vd.setTrunkOpen(false);
+        vd.setAlarmActive(true);
+        for (int i = 1; i <= 4; i++) {
+            vd.setDoorLocked(i, true);
+        }
+
+        boolean result = vd.move();
+
+        assertFalse(result, "Move should return false when the alarm is active");
+        assertFalse(vd.isInMotion(), "Vehicle should not be in motion");
+        assertTrue(vd.isAlarmActive(), "Alarm should remain active");
+    }
+
+    @Test
+    @DisplayName("Moving with an unlocked door should return false and keep the vehicle stationary")
+    void move_withUnlockedDoor_shouldReturnFalse() {
+
+        vd.setRunning(true);
+        vd.setTrunkOpen(false);
+        vd.setAlarmActive(false);
+        for (int i = 1; i <= 4; i++) {
+            vd.setDoorLocked(i, true);
+        }
+        vd.setDoorLocked(2, false);
+
+        boolean result = vd.move();
+
+        assertFalse(result, "Move should return false when a door is unlocked");
+        assertFalse(vd.isInMotion(), "Vehicle should not be in motion");
+        assertFalse(vd.isDoorLocked(2), "Door 2 should remain unlocked");
+    }
+
+    @Test
+    @DisplayName("Moving with trunk closed, alarm inactive and all doors locked should return true")
+    void move_withAllPreconditionsMet_shouldReturnTrue() {
+
+        vd.setRunning(true);
+        vd.setTrunkOpen(false);
+        vd.setAlarmActive(false);
+        vd.setInMotion(false);
+        for (int i = 1; i <= 4; i++) {
+            vd.setDoorLocked(i, true);
+        }
+
+        boolean result = vd.move();
+
+        assertTrue(result, "Move should return true when all preconditions are met");
+        assertTrue(vd.isInMotion(), "Vehicle should be in motion");
+        assertTrue(vd.isAlarmActive() == false, "Alarm should remain inactive");
+    }
+
+    @Test
+    @DisplayName("Opening a door while the alarm is active should return false and keep the door closed")
+    void openDoor_withActiveAlarm_shouldReturnFalse() {
+
+        vd.setAlarmActive(true);
+        vd.setDoorOpen(1, false);
+        vd.setDoorLocked(1, false);
+
+        boolean result = vd.openDoor(1);
+
+        assertFalse(result, "Opening a door should return false while the alarm is active");
+        assertFalse(vd.isDoorOpen(1), "Door 1 should remain closed");
+        assertTrue(vd.isAlarmActive(), "Alarm should remain active");
+    }
+
+    @Test
+    @DisplayName("Locking an open door should return true and lock the door while leaving it open")
+    void lockDoor_onOpenDoor_shouldSucceed() {
+
+        vd.setDoorOpen(3, true);
+        vd.setDoorLocked(3, false);
+
+        boolean result = vd.lockDoor(3);
+
+        assertTrue(result, "Locking an open door should return true");
+        assertTrue(vd.isDoorLocked(3), "Door 3 should be locked");
+        assertTrue(vd.isDoorOpen(3), "Door 3 should remain open");
+    }
 }

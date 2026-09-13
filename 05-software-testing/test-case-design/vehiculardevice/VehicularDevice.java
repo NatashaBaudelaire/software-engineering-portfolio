@@ -4,10 +4,11 @@ package vehiculardevice;
  * Stateful model of a motor vehicle used for the test-case-design exercise.
  *
  * <p>The vehicle has four doors, a trunk, an alarm, and can be running or in
- * motion. The behaviour presented here is the minimal implementation required
- * by the tests in {@code VehicularDeviceTest} and {@code VehicularDeviceTestSuite}:
- * behaviours that the tests do not exercise are kept deliberately simple and
- * flagged with {@code // TODO} comments for human review.
+ * motion. The behaviour defined by the test suite and this contract is fully
+ * implemented: a vehicle can only move when it is running, stationary, with
+ * the trunk closed, the alarm inactive and every door locked; a door cannot be
+ * opened while the alarm is active (the attempt soft-fails); and any door can
+ * be locked regardless of whether it is open or closed.
  */
 public class VehicularDevice {
 
@@ -38,21 +39,30 @@ public class VehicularDevice {
     /**
      * Attempts to put the vehicle into motion.
      *
+     * <p>The vehicle can only start moving when it is running, stationary, the
+     * trunk is closed, the alarm is inactive, and every door is locked. If any
+     * of those preconditions is violated the attempt fails and the vehicle
+     * remains stationary.
+     *
      * @return {@code true} if the vehicle starts moving, {@code false} otherwise
      */
     public boolean move() {
-        // TODO: Tests only cover the "not moving while the trunk is open" rule.
-        // Whether an active alarm or locked doors should also prevent movement
-        // is not specified by any test; the guards below are the simplest
-        // reasonable interpretation of the "running, stationary" precondition.
         if (!running) {
             return false;
         }
         if (trunkOpen) {
             return false;
         }
+        if (alarmActive) {
+            return false;
+        }
         if (inMotion) {
             return false;
+        }
+        for (int doorNumber = 1; doorNumber <= NUMBER_OF_DOORS; doorNumber++) {
+            if (!isDoorLocked(doorNumber)) {
+                return false;
+            }
         }
         inMotion = true;
         return true;
@@ -61,16 +71,22 @@ public class VehicularDevice {
     /**
      * Attempts to open the given door.
      *
+     * <p>A closed door can be opened unless the alarm is active; an alarm blocks
+     * opening and the attempt soft-fails. Returning {@code false} (rather than
+     * throwing) is consistent with how this method already reports the "cannot
+     * open right now" case of an already-open door, and with how {@code move()}
+     * refuses prohibited states; an active alarm is an expected runtime state,
+     * not invalid input, so {@link IllegalArgumentException} remains reserved
+     * for invalid door numbers.
+     *
      * @param doorNumber door number between 1 and {@value #NUMBER_OF_DOORS}
-     * @return {@code true} if the door was opened, {@code false} if it was already open
+     * @return {@code true} if the door was opened, {@code false} if it was already
+     *         open or could not be opened because the alarm is active
      * @throws IllegalArgumentException if {@code doorNumber} is not a valid door
      */
     public boolean openDoor(int doorNumber) {
         validateDoorNumber(doorNumber);
-        // TODO: The test preconditions mention the alarm being deactivated, but no
-        // test asserts that an active alarm blocks door opening. That rule is not
-        // implemented; only the "already open" case observed by the tests is.
-        if (isDoorOpen(doorNumber)) {
+        if (alarmActive || isDoorOpen(doorNumber)) {
             return false;
         }
         setDoorOpen(doorNumber, true);
@@ -80,14 +96,16 @@ public class VehicularDevice {
     /**
      * Attempts to lock the given door.
      *
+     * <p>Locking is always permitted: a door can be locked whether it is open or
+     * closed. Locking an open door returns {@code true} and sets its locked flag
+     * while leaving it open.
+     *
      * @param doorNumber door number between 1 and {@value #NUMBER_OF_DOORS}
      * @return {@code true} if the door was locked, {@code false} if it was already locked
      * @throws IllegalArgumentException if {@code doorNumber} is not a valid door
      */
     public boolean lockDoor(int doorNumber) {
         validateDoorNumber(doorNumber);
-        // TODO: No test covers locking an open door; whether that should be
-        // allowed or rejected is an assumption for human review.
         if (isDoorLocked(doorNumber)) {
             return false;
         }
