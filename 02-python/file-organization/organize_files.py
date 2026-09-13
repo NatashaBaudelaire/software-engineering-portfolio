@@ -8,12 +8,7 @@ directory_path = r"C:\Users\YourUsername\Documents\Project"
 print(os.listdir(directory_path))
 
 # Dictionary mapping each file extension to its destination directory
-extensions = {
-    "pdf": "Files",
-    "jpg": "Images",
-    "png": "Images",
-    "xlsx": "Spreadsheets"
-}
+extensions = {"pdf": "Files", "jpg": "Images", "png": "Images", "xlsx": "Spreadsheets"}
 
 files = os.listdir(directory_path)
 
@@ -26,7 +21,9 @@ for file_name in files:
 
         if extension in extensions:
             destination_directory_name = extensions[extension]
-            destination_directory_path = os.path.join(directory_path, destination_directory_name)
+            destination_directory_path = os.path.join(
+                directory_path, destination_directory_name
+            )
 
             if not os.path.exists(destination_directory_path):
                 os.makedirs(destination_directory_path)
@@ -37,7 +34,9 @@ for file_name in files:
 
             try:
                 shutil.move(source, destination)
-                print(f"Moved successfully: {file_name} -> {destination_directory_name}")
+                print(
+                    f"Moved successfully: {file_name} -> {destination_directory_name}"
+                )
             except Exception as e:
                 print(f"Error moving {file_name}: {e}")
         else:
