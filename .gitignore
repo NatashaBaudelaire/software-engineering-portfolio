@@ -4,7 +4,6 @@
 *.war
 *.ear
 *.nar
-*.ear
 
 # Java package directories
 target/
@@ -21,14 +20,11 @@ __pycache__/
 env/
 venv/
 ENV/
-build/
 develop-eggs/
 dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
 parts/
 sdist/
 var/
@@ -38,16 +34,7 @@ wheels/
 *.egg
 
 # Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb_checkpoints
-
-# Data Science
-*.csv
-*.xlsx
-*.xls
-*.json
-!package.json
-!package-lock.json
+.ipynb_checkpoints/
 
 # IDE
 .vscode/
@@ -70,7 +57,6 @@ logs/
 *.tmp
 *.temp
 *.bak
-*.swp
 
 # Database
 *.db
@@ -81,3 +67,28 @@ logs/
 terraform.tfstate
 *.tfstate
 *.tfstate.backup
+
+# Flutter / Dart
+.dart_tool/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub/
+**/doc/api/
+
+# Android (Flutter-generated and machine-specific)
+android/.gradle/
+android/local.properties
+**/android/local.properties
+**/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+
+# iOS (Flutter-generated)
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/.last_build_id
+**/ios/Runner.xcodeproj/xcuserdata/
+**/ios/Runner.xcodeproj/project.xcworkspace/xcuserdata/
+**/ios/Runner.xcworkspace/xcuserdata/
+*.xcuserstate
