@@ -32,46 +32,49 @@ traced back to the course curriculum.
 
 ## Repository Structure
 
-Top-level directories are **knowledge domains** of software engineering. Each
-domain contains only the content types that exist for it (no empty folders).
+The directories under `software-engineer/` are the **knowledge domains** of
+software engineering. Each domain contains only the content types that exist
+for it (no empty folders).
 
 ```
-artificial-intelligence/
-  README.md             # Domain index
-  exercises/            # Practice: working with .h5 / HDF5 ML models
-  notes/                # Module notes and learning roadmap
+software-engineer/
+  artificial-intelligence/
+    README.md             # Domain index
+    exercises/            # Practice: working with .h5 / HDF5 ML models
+    notes/                # Module notes and learning roadmap
 
-cloud-computing/
-  README.md             # Domain index
-  labs/                 # Apache setup, FTP server, HTTP traffic analysis
+  cloud-computing/
+    README.md             # Domain index
+    labs/                 # Apache setup, FTP server, HTTP traffic analysis
 
-database-design/
-  README.md             # Domain index
-  exercises/            # Conceptual, logical and physical data models
+  database-design/
+    README.md             # Domain index
+    exercises/            # Conceptual, logical and physical data models
 
-data-science/
-  README.md             # Domain index
-  datasets/             # Single source of truth for all notebooks' datasets
-  projects/             # Jupyter notebooks: EDA, visualization, preprocessing
+  data-science/
+    README.md             # Domain index
+    datasets/             # Single source of truth for all notebooks' datasets
+    projects/             # Jupyter notebooks: EDA, visualization, preprocessing
 
-mobile-development/
-  README.md             # Domain index
-  projects/             # Flutter apps (counter app, widgets & app anatomy)
+  mobile-development/
+    README.md             # Domain index
+    projects/             # Flutter apps (counter app, widgets & app anatomy)
 
-programming-languages/
-  README.md             # Language-family index (languages ≠ frameworks)
-  java/                 # Algorithms/logic + OOP (encapsulation, inheritance, ...)
-  python/               # Algorithms/logic, functions, file handling
+  programming-languages/
+    README.md             # Language-family index (languages ≠ frameworks)
+    exercises/java/       # Algorithms/logic + OOP (encapsulation, inheritance, ...)
+    exercises/python/     # Algorithms/logic, functions, file handling
 
-software-testing/
-  README.md             # Domain index
-  exercises/            # Manual testing, test case design, unit tests (JUnit 5)
+  software-testing/
+    README.md             # Domain index
+    exercises/            # Manual testing, test case design, unit tests (JUnit 5)
 ```
 
-Top-level directories are **knowledge domains** (or the programming-languages
-family). Within each domain, content is organized by the activity type it
-actually is (exercises, labs, projects, notes or datasets) — only the types
-that exist are present. Each domain has a `README.md` indexing its contents.
+The directories under `software-engineer/` are the **knowledge domains** (or
+the programming-languages family). Within each domain, content is organized by
+the activity type it actually is (exercises, labs, projects, notes or
+datasets) — only the types that exist are present. Each domain has a
+`README.md` indexing its contents.
 
 ## Areas of Study
 
@@ -81,7 +84,7 @@ that exist are present. Each domain has a `README.md` indexing its contents.
 | Python | Algorithms & logic, functions, file handling (`organize_files.py`) |
 | Database design | Full modeling pipeline from ER diagram to executable SQL |
 | Software testing | Manual test execution, boundary analysis, JUnit 5 unit tests |
-| Mobile development | Two Flutter apps with widget tests: [My First App](mobile-development/projects/getting-started-with-flutter/my_first_app/README.md) and [Anatomy App](mobile-development/projects/flutter-widgets-and-app-anatomy/anatomy_app/README.md) |
+| Mobile development | Two Flutter apps with widget tests: [My First App](software-engineer/mobile-development/projects/getting-started-with-flutter/my_first_app/README.md) and [Anatomy App](software-engineer/mobile-development/projects/flutter-widgets-and-app-anatomy/anatomy_app/README.md) |
 | Cloud | Google Cloud Shell labs: Apache, FTP server, HTTP traffic capture |
 | Data science | EDA and preprocessing notebooks over shared, deduplicated datasets |
 | Artificial intelligence | Practice exercises: loading, inspecting and using Keras `.h5` models |
