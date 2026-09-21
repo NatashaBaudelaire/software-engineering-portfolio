@@ -1,8 +1,10 @@
 <h1 align="center">
-  Software Engineering Coursework
+  Software Engineering Portfolio
 </h1>
 
-![Banner](banner.gif)
+<p align="center">
+  <strong>Personal portfolio of software engineering coursework</strong> — exercises, labs, and projects across 7 knowledge domains.
+</p>
 
 ## Table of Contents
 
@@ -19,7 +21,7 @@
 
 ## Project Overview
 
-Software Engineering Coursework is a comprehensive personal portfolio documenting a progressive learning path across the core domains of software engineering. The repository contains exercises, labs, and projects completed during a Software Engineering degree, organized by **knowledge domain** and content type. Every module is self-contained with its own tests, documentation, and solution notes, making it easy to trace work back to the original curriculum.
+Software Engineering Portfolio is a comprehensive personal portfolio documenting a progressive learning path across the core domains of software engineering. The repository contains exercises, labs, and projects completed during a Software Engineering degree, organized by **knowledge domain** and content type. Every module is self-contained with its own tests, documentation, and solution notes, making it easy to trace work back to the original curriculum.
 
 The portfolio spans seven major domains: **Artificial Intelligence**, **Cloud Computing**, **Database Design**, **Data Science**, **Mobile Development**, **Programming Languages**, and **Software Testing** — covering everything from fundamental algorithms to production-ready mobile applications and machine learning pipelines.
 
@@ -39,14 +41,13 @@ The portfolio spans seven major domains: **Artificial Intelligence**, **Cloud Co
 - **Seven Knowledge Domains**: Complete coverage of AI, Cloud, Databases, Data Science, Mobile, Programming Languages, and Testing
 - **Self-Contained Modules**: Each domain includes exercises, labs, projects, and/or notes with dedicated README indexes
 - **Progressive Learning Path**: Structured progression from fundamentals to advanced topics across 7 learning stages
-- **Real-World Tools & APIs**: Google Cloud Shell, TMDB-style data fetching, Flutter widget testing, Keras model serialization
+- **Real-World Tools & APIs**: Google Cloud Shell, Flutter widget testing, Keras model serialization
 - **Database Modeling Pipeline**: Full ER → logical → physical → executable SQL workflow
 - **Deduplicated Datasets**: Single source of truth for all data science notebooks (diabetes, house prices, traffic accidents, water supply)
 - **Flutter Mobile Apps**: Two complete apps with widget tests — "My First App" and "Widgets & App Anatomy"
 - **Comprehensive Test Suites**: JUnit 5 unit tests, manual test cases, test case design documentation
 - **Keras Model Practice**: Exercises for loading, inspecting, and running inference with `.h5` HDF5 models
 - **Cross-Language Implementation**: Algorithms and data structures in both Java and Python
-- **Automatic Image Fallback**: Cloud lab materials include 4K-quality screenshots and captures
 
 ## Repository Structure
 
@@ -126,11 +127,11 @@ The directories at the root are the **knowledge domains** of software engineerin
 │   │   └── python/                  # Algorithms/logic, functions, file handling
 │   │       ├── algorithms-and-problem-solving/
 │   │       │   ├── conditionals/
-│   │       │   ├── functions/
-│   │       │   ├── loops/
-│   │       │   ├── mathematical-calculations/
-│   │       │   ├── strings/
-│   │       │   └── variables-and-input/
+│   │   │   │   ├── functions/
+│   │       │   │   ├── loops/
+│   │   │   │   ├── mathematical-calculations/
+│   │       │   │   ├── strings/
+│   │       │   │   └── variables-and-input/
 │   │       └── file-handling/
 │   ├── labs/
 │   └── projects/
@@ -185,8 +186,8 @@ The directories at the root are the **knowledge domains** of software engineerin
 
 ```bash
 # Clone the repository
-git clone https://github.com/NatashaBaudelaire/software-engineering-coursework.git
-cd software-engineering-coursework
+git clone https://github.com/NatashaBaudelaire/software-engineering-portfolio.git
+cd software-engineering-portfolio
 
 # Java: run tests
 cd programming-languages/exercises/java/...
