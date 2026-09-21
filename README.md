@@ -2,10 +2,6 @@
   Software Engineering Portfolio
 </h1>
 
-<p align="center">
-  <strong>Personal portfolio of software engineering coursework</strong> — exercises, labs, and projects across 7 knowledge domains.
-</p>
-
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
