@@ -1,0 +1,46 @@
+Tutorial Guide: Installing and Testing Apache on Google Cloud Shell
+
+1. Access Google Cloud Shell: https://shell.cloud.google.com
+
+2. Log in with your Google account and wait for the terminal to initialize.
+
+3. Update packages and install Apache:
+sudo apt update
+sudo apt install apache2 -y
+
+4. Start the Apache service:
+sudo service apache2 start
+
+5. Verify that Apache is active:
+sudo service apache2 status
+Check that the response shows active (running).
+
+6. Configure Apache to use port 8080 (required to work with Cloud Shell's Web Preview):
+Edit the ports configuration file:
+
+sudo vim /etc/apache2/ports.conf
+
+Change the line:
+Listen 80
+
+To:
+Listen 8080
+
+Edit the default site file:
+sudo vim /etc/apache2/sites-enabled/000-default.conf
+
+Change the line:
+<VirtualHost *:80>
+
+To:
+<VirtualHost *:8080>
+
+7. Restart Apache to apply the changes:
+sudo service apache2 restart
+
+8. Access Apache via Web Preview:
+In the upper right corner of Cloud Shell, click the "Web Preview" button.
+
+Choose the option "Preview on port 8080".
+
+A new tab will open displaying the default Apache page.
