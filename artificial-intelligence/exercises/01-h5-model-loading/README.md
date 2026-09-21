@@ -66,7 +66,7 @@ pip install tensorflow
 ## Installation
 
 ```bash
-git clone https://github.com/your-user/software-engineering-coursework.git
+git clone https://github.com/NatashaBaudelaire/software-engineering-coursework.git
 cd software-engineering-coursework/artificial-intelligence/exercises/01-h5-model-loading
 ```
 

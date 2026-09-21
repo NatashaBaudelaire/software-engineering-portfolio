@@ -186,7 +186,7 @@ The directories at the root are the **knowledge domains** of software engineerin
 
 ```bash
 # Clone the repository
-git clone https://github.com/NatashaBaudelaire/software-engineering-portfolio.git
+git clone https://github.com/NatashaBaudelaire/software-engineering-coursework.git
 cd software-engineering-portfolio
 
 # Java: run tests
