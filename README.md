@@ -38,7 +38,7 @@ This repository brings together the material developed throughout my Software En
 - **Real-World Tools & APIs**: Google Cloud Shell, Flutter widget testing, Keras model serialization
 - **Database Modeling Pipeline**: Full ER → logical → physical → executable SQL workflow
 - **Deduplicated Datasets**: Single source of truth for all data science notebooks (diabetes, house prices, traffic accidents, water supply)
-- **Flutter Mobile Apps**: Two complete apps with widget tests — "My First App" and "Widgets & App Anatomy"
+- **Flutter Mobile Apps**: Two complete apps with widget tests - "My First App" and "Widgets & App Anatomy"
 - **Comprehensive Test Suites**: JUnit 5 unit tests, manual test cases, test case design documentation
 - **Keras Model Practice**: Exercises for loading, inspecting, and running inference with `.h5` HDF5 models
 - **Cross-Language Implementation**: Algorithms and data structures in both Java and Python
@@ -112,18 +112,18 @@ The directories at the root are the **knowledge domains** of software engineerin
 | **Cloud Computing** | Google Cloud Shell labs: Apache setup, FTP server, HTTP/FTP traffic capture with tcpdump |
 | **Data Science** | EDA and preprocessing notebooks over shared, deduplicated datasets (diabetes, house prices, traffic accidents, water supply) |
 | **Artificial Intelligence** | Practice exercises: loading, inspecting, predicting with Keras `.h5` models (CNN, LSTM) |
-| **Programming Languages** | Java & Python exercises [programming-languages/README.md](programming-languages/README.md#areas-of-study) |
+| **Programming Languages** | Java and Python [exercises](https://github.com/NatashaBaudelaire/software-engineering-portfolio/tree/main/programming-languages/exercises)
 
 ## Learning Progression
 
-1. **Fundamental Programming** — algorithms and logic in Java and Python
-2. **Object-Oriented Programming** — encapsulation, inheritance, composition
-3. **Database Design** — conceptual → logical → physical modeling
-4. **Software Quality** — manual and automated testing
-5. **Cloud Infrastructure** — cloud shell, web servers, network traffic analysis
-6. **Mobile Development** — Flutter apps and widget testing
-7. **Data Science** — exploration, visualization and preprocessing
-8. **Artificial Intelligence** — loading, inspecting, and running inference with Keras models
+1. **Fundamental Programming** - algorithms and logic in Java and Python
+2. **Object-Oriented Programming** - encapsulation, inheritance, composition
+3. **Database Design** - conceptual → logical → physical modeling
+4. **Software Quality** - manual and automated testing
+5. **Cloud Infrastructure** - cloud shell, web servers, network traffic analysis
+6. **Mobile Development** - Flutter apps and widget testing
+7. **Data Science** - exploration, visualization and preprocessing
+8. **Artificial Intelligence** - loading, inspecting, and running inference with Keras models
 
 ## Installation and Execution
 
@@ -141,8 +141,8 @@ The directories at the root are the **knowledge domains** of software engineerin
 
 ```bash
 # Clone the repository
-git clone https://github.com/NatashaBaudelaire/software-engineering-coursework.git
-cd software-engineering-coursework
+git clone https://github.com/NatashaBaudelaire/software-engineering-portfolio.git
+cd software-engineering-portfolio
 
 # Java: run tests
 cd programming-languages/exercises/java/...
