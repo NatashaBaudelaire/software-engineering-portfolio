@@ -17,7 +17,7 @@
 
 ## Project Overview
 
-Personal portfolio of software engineering coursework — exercises, labs, and projects across 7 domains: **Artificial Intelligence**, **Cloud Computing**, **Database Design**, **Data Science**, **Mobile Development**, **Programming Languages**, and **Software Testing**. Each module is self-contained with tests, docs, and solution notes.
+This repository brings together the material developed throughout my Software Engineering studies, organized by knowledge domain (programming languages, databases, software testing, mobile development, cloud computing, data science, and artificial intelligence). Each domain contains exercises, labs, projects, and notes documenting my progression from fundamentals to advanced topics, with a focus on best practices, automated testing, and practical application of the concepts studied.
 
 ## Technologies Used
 
