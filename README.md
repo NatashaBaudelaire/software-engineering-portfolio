@@ -17,9 +17,7 @@
 
 ## Project Overview
 
-Software Engineering Portfolio is a comprehensive personal portfolio documenting a progressive learning path across the core domains of software engineering. The repository contains exercises, labs, and projects completed during a Software Engineering degree, organized by **knowledge domain** and content type. Every module is self-contained with its own tests, documentation, and solution notes, making it easy to trace work back to the original curriculum.
-
-The portfolio spans seven major domains: **Artificial Intelligence**, **Cloud Computing**, **Database Design**, **Data Science**, **Mobile Development**, **Programming Languages**, and **Software Testing** — covering everything from fundamental algorithms to production-ready mobile applications and machine learning pipelines.
+Personal portfolio of software engineering coursework — exercises, labs, and projects across 7 domains: **Artificial Intelligence**, **Cloud Computing**, **Database Design**, **Data Science**, **Mobile Development**, **Programming Languages**, and **Software Testing**. Each module is self-contained with tests, docs, and solution notes.
 
 ## Technologies Used
 
@@ -53,10 +51,6 @@ The directories at the root are the **knowledge domains** of software engineerin
 ├── artificial-intelligence/
 │   ├── README.md                    # Domain index
 │   ├── exercises/                   # Practice: working with .h5 / HDF5 ML models
-│   │   ├── 01-h5-model-loading/
-│   │   ├── 02-h5-model-inspection/
-│   │   ├── 03-h5-model-prediction/
-│   │   └── 04-h5-image-classification/
 │   ├── labs/
 │   ├── notes/                       # Module notes and learning roadmap
 │   └── projects/
@@ -64,79 +58,45 @@ The directories at the root are the **knowledge domains** of software engineerin
 ├── cloud-computing/
 │   ├── README.md                    # Domain index
 │   ├── labs/                        # Apache setup, FTP server, HTTP traffic analysis
-│   │   ├── apache-cloud-shell/
-│   │   ├── ftp-server/
-│   │   └── http-traffic-analysis/
 │   ├── exercises/
 │   └── projects/
 │
 ├── database-design/
 │   ├── README.md                    # Domain index
 │   ├── exercises/
-│   │   ├── conceptual-model/        # ER diagrams (cleaning, order, pharmacy, physical-activity)
-│   │   ├── logical-model/           # Relational schemas (cars, company, pharmacy, salesperson, seller, traffic, vehicle)
-│   │   └── physical-model/          # Executable SQL (car, company, infraction, pharmacy, register, salesperson, seller, traffic, vehicle)
+│   │   ├── conceptual-model/        # ER diagrams
+│   │   ├── logical-model/           # Relational schemas
+│   │   └── physical-model/          # Executable SQL
 │   ├── labs/
 │   └── projects/
 │
 ├── data-science/
 │   ├── README.md                    # Domain index
 │   ├── datasets/                    # Single source of truth for all notebooks
-│   │   ├── diabetes.csv
-│   │   ├── house_prices.csv
-│   │   ├── traffic_accident_severity_detection.csv
-│   │   └── watersupply.csv
 │   ├── projects/
-│   │   ├── data-analysis-and-visualization/
-│   │   │   └── diabetes.ipynb
-│   │   ├── data-preprocessing/
-│   │   │   ├── house_prices.ipynb
-│   │   │   └── pima_diabetes.ipynb
-│   │   └── exploratory-data-analysis/
-│   │       └── traffic_accident_severity_detection.ipynb
 │   └── exercises/
 │
 ├── mobile-development/
 │   ├── README.md                    # Domain index
 │   ├── projects/
 │   │   ├── getting-started-with-flutter/
-│   │   │   └── my_first_app/        # Counter app with widget tests
 │   │   └── flutter-widgets-and-app-anatomy/
-│   │       └── anatomy_app/         # Widgets showcase with widget tests
 │   ├── exercises/
 │   └── labs/
 │
 ├── programming-languages/
-│   ├── README.md                    # Language-family index (languages ≠ frameworks)
+│   ├── README.md                    # Language-family index
 │   ├── exercises/
 │   │   ├── java/                    # Algorithms/logic + OOP
-│   │   │   ├── algorithms-and-problem-solving/
-│   │   │   │   ├── conditionals/
-│   │   │   │   ├── loops/
-│   │   │   │   ├── mathematical-calculations/
-│   │   │   │   ├── strings/
-│   │   │   │   └── variables-and-input/
-│   │   │   └── object-oriented-programming/
-│   │   │       ├── encapsulation/
-│   │   │       ├── inheritance/
-│   │   │       └── aggregation-and-composition/
 │   │   └── python/                  # Algorithms/logic, functions, file handling
-│   │       ├── algorithms-and-problem-solving/
-│   │       │   ├── conditionals/
-│   │   │   │   ├── functions/
-│   │       │   │   ├── loops/
-│   │   │   │   ├── mathematical-calculations/
-│   │       │   │   ├── strings/
-│   │       │   │   └── variables-and-input/
-│   │       └── file-handling/
 │   ├── labs/
 │   └── projects/
 │
 └── software-testing/
     ├── README.md                    # Domain index
     ├── exercises/
-    │   ├── manual-testing/          # CandidateStatus evaluation
-    │   ├── test-case-design/        # VehicularDevice scenarios, Comments documentation
+    │   ├── manual-testing/
+    │   ├── test-case-design/
     │   └── unit-testing/            # Calculator JUnit 5 test suite
     ├── labs/
     └── projects/
@@ -183,7 +143,7 @@ The directories at the root are the **knowledge domains** of software engineerin
 ```bash
 # Clone the repository
 git clone https://github.com/NatashaBaudelaire/software-engineering-coursework.git
-cd software-engineering-portfolio
+cd software-engineering-coursework
 
 # Java: run tests
 cd programming-languages/exercises/java/...
