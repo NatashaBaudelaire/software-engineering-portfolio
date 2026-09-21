@@ -106,14 +106,13 @@ The directories at the root are the **knowledge domains** of software engineerin
 
 | Area | Highlights |
 | --- | --- |
-| **Java** | Conditionals, loops, strings, mathematical calculations, OOP: encapsulation, inheritance, aggregation/composition |
-| **Python** | Algorithms & logic, functions, file handling (`organize_files.py`), data structures |
 | **Database Design** | Full modeling pipeline: ER diagram → logical schema → physical model → executable SQL |
 | **Software Testing** | Manual test execution, boundary analysis, test case design, JUnit 5 unit tests |
 | **Mobile Development** | Two Flutter apps with widget tests: [My First App](mobile-development/projects/getting-started-with-flutter/my_first_app/README.md) and [Anatomy App](mobile-development/projects/flutter-widgets-and-app-anatomy/anatomy_app/README.md) |
 | **Cloud Computing** | Google Cloud Shell labs: Apache setup, FTP server, HTTP/FTP traffic capture with tcpdump |
 | **Data Science** | EDA and preprocessing notebooks over shared, deduplicated datasets (diabetes, house prices, traffic accidents, water supply) |
 | **Artificial Intelligence** | Practice exercises: loading, inspecting, predicting with Keras `.h5` models (CNN, LSTM) |
+| **Programming Languages** | Java & Python exercises [programming-languages/README.md](programming-languages/README.md#areas-of-study) |
 
 ## Learning Progression
 

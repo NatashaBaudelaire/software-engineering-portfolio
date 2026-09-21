@@ -32,6 +32,13 @@ across the two languages.
   (Flutter apps, JUnit test suites, Keras models, SQL schemas) is stored in
   its corresponding domain at the repository root.
 
+## Areas of Study
+
+| Area | Highlights |
+| --- | --- |
+| **Java** | Conditionals, loops, strings, mathematical calculations, OOP: encapsulation, inheritance, aggregation/composition |
+| **Python** | Algorithms & logic, functions, file handling (`organize_files.py`), data structures |
+
 ## Learning Objectives
 
 - Compare the same algorithmic concepts across Java and Python
